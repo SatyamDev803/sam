@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FlowBackground } from "@/components/flow-background";
 import { profile } from "@/data/profile";
@@ -62,16 +62,22 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-3"
                     >
-                        <Button asChild size="lg" className="group rounded-xl px-8 h-12 text-base glow-primary">
+                        <Button asChild size="lg" className="group rounded-xl px-6 h-12 text-base glow-primary">
                             <Link href="#projects">
                                 View Projects
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Link>
                         </Button>
-                        <Button asChild variant="outline" size="lg" className="rounded-xl px-8 h-12 text-base bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/80">
+                        <Button asChild variant="outline" size="lg" className="rounded-xl px-6 h-12 text-base bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/80">
                             <Link href="/blog">Read Blog</Link>
+                        </Button>
+                        <Button asChild variant="outline" size="lg" className="rounded-xl px-6 h-12 text-base bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/80">
+                            <a href="/resume/Satyam_SDE.pdf" download>
+                                <Download className="mr-2 h-4 w-4" />
+                                Resume
+                            </a>
                         </Button>
                     </motion.div>
                 </div>
