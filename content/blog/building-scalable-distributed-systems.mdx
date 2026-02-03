@@ -1,0 +1,61 @@
+---
+title: "Building Scalable Distributed Systems: Lessons Learned"
+excerpt: "Key insights from designing and operating distributed systems at scale, covering consistency, fault tolerance, and operational excellence."
+date: "2024-01-15"
+tags: ["Distributed Systems", "Architecture", "Backend"]
+---
+
+Building distributed systems that work reliably at scale is one of the most challenging aspects of modern software engineering. After working on various projects including TalentAI's distributed computing infrastructure, I've gathered some key insights worth sharing.
+
+## The CAP Theorem in Practice
+
+Understanding CAP theorem is fundamental, but applying it requires nuance. In real-world systems, you're rarely making a binary choice between consistency and availability.
+
+<BlogImage 
+  src="/images/satyam-first-dollar.png" 
+  alt="Developer milestone achievement" 
+  caption="Every journey starts with a first step"
+/>
+
+## Key Principles
+
+### 1. Design for Failure
+
+Every component will fail eventually. The question is not *if* but *when*. Design your systems with this mindset:
+
+- **Implement circuit breakers** to prevent cascade failures
+- **Use bulkheads** to isolate components
+- **Plan for graceful degradation** when dependencies fail
+
+### 2. Embrace Eventual Consistency
+
+Not everything needs strong consistency. Identify which parts of your system truly require it:
+
+```python
+# Example: Using async operations for non-critical updates
+async def update_analytics(event: Event):
+    await queue.publish("analytics", event)
+    # Analytics can be eventually consistent
+```
+
+### 3. Monitor Everything
+
+You can't improve what you don't measure. Key metrics to track:
+
+- Request latency (p50, p95, p99)
+- Error rates by type and service
+- Resource utilization
+- Queue depths and processing times
+
+## Lessons from TalentAI
+
+Building TalentAI's distributed matching system taught me several valuable lessons:
+
+1. **Start with clear SLOs** - Define what "good" looks like before building
+2. **Use Ray for parallelization** - Distributed computing doesn't have to be complex
+3. **Cache aggressively** - We achieved 80% cache hit rates with Redis
+4. **Index strategically** - Proper PostgreSQL indexing reduced latency from 250ms to 50ms
+
+## Conclusion
+
+Building distributed systems is as much about organizational patterns as technical ones. Start simple, measure relentlessly, and iterate based on real data.

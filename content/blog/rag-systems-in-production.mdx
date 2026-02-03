@@ -1,0 +1,47 @@
+---
+title: "RAG Systems in Production: A Practical Guide"
+excerpt: "Lessons from deploying Retrieval-Augmented Generation systems in production environments, covering architecture patterns and common pitfalls."
+date: "2024-02-01"
+tags: ["AI", "LLM", "RAG", "Machine Learning"]
+---
+
+Retrieval-Augmented Generation (RAG) has become the go-to pattern for building LLM applications that need access to private or up-to-date information. However, moving from a proof-of-concept to a production system requires careful consideration of many factors.
+
+## The Basic Architecture
+
+At its core, RAG combines two components:
+1. A retrieval system that finds relevant documents
+2. A language model that generates responses using those documents
+
+The simple version is straightforward: embed documents, store in a vector database, retrieve top-k results, and feed them to the LLM. Reality is more nuanced.
+
+## Chunking Strategies Matter
+
+How you split documents significantly impacts retrieval quality. I've found these strategies effective:
+
+- **Semantic chunking** over fixed-size splits
+- **Overlapping chunks** to preserve context at boundaries
+- **Hierarchical indexing** for long documents
+- **Metadata preservation** for filtering and re-ranking
+
+## Retrieval is Not Solved
+
+Vector similarity is a starting point, not the destination. Production systems often need:
+
+- **Hybrid search** combining semantic and keyword retrieval
+- **Re-ranking** with cross-encoders for precision
+- **Query expansion** to handle vocabulary mismatch
+- **Filtering** based on metadata and permissions
+
+## Evaluation is Hard but Essential
+
+Without proper evaluation, you're flying blind. Metrics I track:
+
+- Retrieval precision and recall
+- Answer relevance and faithfulness
+- Latency at each stage
+- Cost per query
+
+## Conclusion
+
+RAG systems are powerful but require significant engineering effort to work well in production. Start simple, measure everything, and iterate based on real user feedback.
