@@ -52,79 +52,79 @@
 
 :root {
   --radius: 0.75rem;
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --card: rgba(255, 255, 255, 0.7);
-  --card-foreground: #0f172a;
-  --popover: rgba(255, 255, 255, 0.9);
-  --popover-foreground: #0f172a;
-  --primary: #7070FF;
+  --background: #FFFFFF;
+  --foreground: #2B2B2B;
+  --card: rgba(255, 255, 255, 0.75);
+  --card-foreground: #2B2B2B;
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-foreground: #2B2B2B;
+  --primary: #2B2B2B;
   --primary-foreground: #FFFFFF;
-  --secondary: rgba(241, 245, 249, 0.8);
-  --secondary-foreground: #0f172a;
-  --muted: rgba(248, 250, 252, 0.8);
-  --muted-foreground: #64748b;
-  --accent: rgba(204, 204, 255, 0.3);
-  --accent-foreground: #0f172a;
+  --secondary: rgba(212, 212, 212, 0.4);
+  --secondary-foreground: #2B2B2B;
+  --muted: rgba(212, 212, 212, 0.3);
+  --muted-foreground: #525252;
+  --accent: rgba(212, 212, 212, 0.4);
+  --accent-foreground: #2B2B2B;
   --destructive: #ef4444;
-  --border: rgba(226, 232, 240, 0.6);
-  --input: rgba(226, 232, 240, 0.8);
-  --ring: #7070FF;
-  --lavender: #7070FF;
-  --lavender-soft: #CCCCFF;
-  --glass: rgba(255, 255, 255, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.3);
-  --chart-1: #7070FF;
-  --chart-2: #8b8bff;
-  --chart-3: #a5a5ff;
-  --chart-4: #c0c0ff;
-  --chart-5: #CCCCFF;
-  --sidebar: rgba(255, 255, 255, 0.7);
-  --sidebar-foreground: #0f172a;
-  --sidebar-primary: #7070FF;
+  --border: rgba(212, 212, 212, 0.6);
+  --input: rgba(212, 212, 212, 0.5);
+  --ring: #2B2B2B;
+  --lavender: #2B2B2B;
+  --lavender-soft: #D4D4D4;
+  --glass: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(212, 212, 212, 0.5);
+  --chart-1: #2B2B2B;
+  --chart-2: #4a4a4a;
+  --chart-3: #6a6a6a;
+  --chart-4: #B3B3B3;
+  --chart-5: #D4D4D4;
+  --sidebar: rgba(255, 255, 255, 0.75);
+  --sidebar-foreground: #2B2B2B;
+  --sidebar-primary: #2B2B2B;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: rgba(204, 204, 255, 0.3);
-  --sidebar-accent-foreground: #0f172a;
-  --sidebar-border: rgba(226, 232, 240, 0.6);
-  --sidebar-ring: #7070FF;
+  --sidebar-accent: rgba(212, 212, 212, 0.4);
+  --sidebar-accent-foreground: #2B2B2B;
+  --sidebar-border: rgba(212, 212, 212, 0.6);
+  --sidebar-ring: #2B2B2B;
 }
 
 .dark {
-  --background: #030712;
-  --foreground: #f8fafc;
-  --card: rgba(15, 23, 42, 0.6);
-  --card-foreground: #f8fafc;
-  --popover: rgba(15, 23, 42, 0.9);
-  --popover-foreground: #f8fafc;
-  --primary: #7070FF;
-  --primary-foreground: #FFFFFF;
-  --secondary: rgba(30, 41, 59, 0.6);
-  --secondary-foreground: #f8fafc;
-  --muted: rgba(30, 41, 59, 0.6);
-  --muted-foreground: #94a3b8;
-  --accent: rgba(112, 112, 255, 0.15);
-  --accent-foreground: #f8fafc;
+  --background: #2B2B2B;
+  --foreground: #FFFFFF;
+  --card: rgba(43, 43, 43, 0.7);
+  --card-foreground: #FFFFFF;
+  --popover: rgba(43, 43, 43, 0.95);
+  --popover-foreground: #FFFFFF;
+  --primary: #FFFFFF;
+  --primary-foreground: #2B2B2B;
+  --secondary: rgba(179, 179, 179, 0.2);
+  --secondary-foreground: #FFFFFF;
+  --muted: rgba(179, 179, 179, 0.15);
+  --muted-foreground: #E5E5E5;
+  --accent: rgba(255, 255, 255, 0.1);
+  --accent-foreground: #FFFFFF;
   --destructive: #dc2626;
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.12);
   --input: rgba(255, 255, 255, 0.1);
-  --ring: #7070FF;
-  --lavender: #7070FF;
-  --lavender-soft: rgba(204, 204, 255, 0.2);
-  --glass: rgba(15, 23, 42, 0.5);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --chart-1: #7070FF;
-  --chart-2: #8b8bff;
-  --chart-3: #a5a5ff;
-  --chart-4: #c0c0ff;
-  --chart-5: #CCCCFF;
-  --sidebar: rgba(15, 23, 42, 0.6);
-  --sidebar-foreground: #f8fafc;
-  --sidebar-primary: #7070FF;
-  --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: rgba(112, 112, 255, 0.15);
-  --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: rgba(255, 255, 255, 0.08);
-  --sidebar-ring: #7070FF;
+  --ring: #FFFFFF;
+  --lavender: #FFFFFF;
+  --lavender-soft: rgba(212, 212, 212, 0.3);
+  --glass: rgba(43, 43, 43, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --chart-1: #FFFFFF;
+  --chart-2: #D4D4D4;
+  --chart-3: #B3B3B3;
+  --chart-4: #8a8a8a;
+  --chart-5: #6a6a6a;
+  --sidebar: rgba(43, 43, 43, 0.7);
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #FFFFFF;
+  --sidebar-primary-foreground: #2B2B2B;
+  --sidebar-accent: rgba(255, 255, 255, 0.1);
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255, 255, 255, 0.12);
+  --sidebar-ring: #FFFFFF;
 }
 
 @layer base {
@@ -164,16 +164,16 @@
 /* Gradient mesh background */
 .gradient-mesh {
   background:
-    radial-gradient(ellipse at 20% 20%, rgba(112, 112, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(204, 204, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 40% 60%, rgba(112, 112, 255, 0.08) 0%, transparent 40%);
+    radial-gradient(ellipse at 20% 20%, rgba(179, 179, 179, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(212, 212, 212, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 60%, rgba(179, 179, 179, 0.06) 0%, transparent 40%);
 }
 
 .dark .gradient-mesh {
   background:
-    radial-gradient(ellipse at 20% 20%, rgba(112, 112, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(204, 204, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(ellipse at 40% 60%, rgba(112, 112, 255, 0.05) 0%, transparent 40%);
+    radial-gradient(ellipse at 20% 20%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(212, 212, 212, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 60%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
 }
 
 /* Prose styles for blog content */
@@ -242,8 +242,8 @@
 }
 
 .callout-note {
-  background: rgba(112, 112, 255, 0.1);
-  border: 1px solid rgba(112, 112, 255, 0.3);
+  background: rgba(43, 43, 43, 0.08);
+  border: 1px solid rgba(43, 43, 43, 0.2);
 }
 
 .callout-warning {
@@ -272,9 +272,9 @@
 
 /* Glow effect for primary elements */
 .glow-primary {
-  box-shadow: 0 0 20px rgba(112, 112, 255, 0.3);
+  box-shadow: 0 0 20px rgba(43, 43, 43, 0.2);
 }
 
 .dark .glow-primary {
-  box-shadow: 0 0 30px rgba(112, 112, 255, 0.4);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
 }

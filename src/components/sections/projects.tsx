@@ -37,7 +37,7 @@ export function ProjectsSection() {
                         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
                             Featured Projects
                         </h2>
-                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                        <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
                             A selection of projects showcasing backend systems, blockchain, and AI.
                         </p>
                     </div>
@@ -64,7 +64,7 @@ export function ProjectsSection() {
                         {/* Scrollable Container */}
                         <div
                             ref={scrollRef}
-                            className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
+                            className="flex gap-5 overflow-x-auto p-4 snap-x snap-mandatory scrollbar-hide"
                             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                         >
                             {projects.map((project, index) => (
@@ -80,7 +80,7 @@ export function ProjectsSection() {
                                             <CardTitle className="text-lg">{project.title}</CardTitle>
                                         </CardHeader>
                                         <CardContent className="flex-1 flex flex-col pt-0">
-                                            <p className="text-muted-foreground text-sm mb-4 line-clamp-3 flex-1">
+                                            <p className="text-foreground/70 text-sm mb-4 line-clamp-3 flex-1">
                                                 {project.description}
                                             </p>
                                             <div className="flex flex-wrap gap-1.5 mb-4">

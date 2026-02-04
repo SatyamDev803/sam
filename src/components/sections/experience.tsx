@@ -77,14 +77,14 @@ export function ExperienceSection() {
                                             </div>
                                         </CardHeader>
                                         <CardContent className="pt-0">
-                                            <p className="text-muted-foreground mb-4 text-sm">
+                                            <p className="text-foreground/70 mb-4 text-sm">
                                                 {experience.description}
                                             </p>
                                             <ul className="space-y-2">
                                                 {experience.achievements.map((achievement, i) => (
                                                     <li
                                                         key={i}
-                                                        className="flex items-start gap-3 text-sm text-muted-foreground"
+                                                        className="flex items-start gap-3 text-sm text-foreground/70"
                                                     >
                                                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                                                         <span>{achievement}</span>

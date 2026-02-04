@@ -48,7 +48,7 @@ export function ContactSection() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
-                        <p className="text-lg text-muted-foreground">
+                        <p className="text-lg text-foreground/70">
                             Have a project in mind? Let's build something meaningful together.
                         </p>
                     </div>

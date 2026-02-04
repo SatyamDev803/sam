@@ -57,7 +57,7 @@ export function AboutSection() {
                         className="mb-8"
                     >
                         <Card className="p-8 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
-                            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                            <p className="text-lg text-foreground/80 leading-relaxed text-center">
                                 {profile.bio}
                             </p>
 
@@ -93,7 +93,7 @@ export function AboutSection() {
                                         </div>
                                         <div>
                                             <h3 className="font-semibold mb-1">{item.title}</h3>
-                                            <p className="text-sm text-muted-foreground">{item.description}</p>
+                                            <p className="text-sm text-foreground/70">{item.description}</p>
                                         </div>
                                     </div>
                                 </Card>
