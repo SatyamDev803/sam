@@ -60,29 +60,41 @@ export function HeroSection() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.3 }}
-                            className="flex flex-wrap items-center gap-4 pt-4"
+                            className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 pt-4"
                         >
                             <Button
                                 asChild
                                 size="lg"
-                                className="group rounded-xl px-8 h-14 text-base font-medium tracking-wide"
+                                className="group rounded-xl px-8 h-14 text-base font-medium tracking-wide w-full sm:w-auto"
                             >
                                 <Link href="#projects">
                                     View Work
                                     <ArrowRight className="ml-3 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Link>
                             </Button>
-                            <Button
-                                asChild
-                                variant="outline"
-                                size="lg"
-                                className="rounded-xl px-8 h-14 text-base font-medium tracking-wide border-2 hover:bg-foreground hover:text-background transition-all"
-                            >
-                                <a href="/resume/Satyam_SDE.pdf" download>
-                                    <Download className="mr-3 h-4 w-4" />
-                                    Resume
-                                </a>
-                            </Button>
+                            <div className="flex gap-3">
+                                <Button
+                                    asChild
+                                    variant="outline"
+                                    size="lg"
+                                    className="rounded-xl px-6 h-14 text-base font-medium tracking-wide border-2 hover:bg-foreground hover:text-background transition-all flex-1 sm:flex-none"
+                                >
+                                    <Link href="/blog">
+                                        Read Blog
+                                    </Link>
+                                </Button>
+                                <Button
+                                    asChild
+                                    variant="outline"
+                                    size="lg"
+                                    className="rounded-xl px-6 h-14 text-base font-medium tracking-wide border-2 hover:bg-foreground hover:text-background transition-all flex-1 sm:flex-none"
+                                >
+                                    <a href="/resume/Satyam_SDE.pdf" download>
+                                        <Download className="mr-2 h-4 w-4" />
+                                        Resume
+                                    </a>
+                                </Button>
+                            </div>
                         </motion.div>
                     </div>
 
